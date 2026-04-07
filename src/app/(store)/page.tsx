@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,12 +14,12 @@ export default function Home() {
               نقدم لكم تجربة برجر فاخرة محضرة من أجود أنواع اللحوم الطازجة والخبز المخبوز يومياً. فاموس برجر.. حيث تجتمع الجودة مع المذاق الرفيع.
             </p>
             <div className="flex gap-4 flex-row-reverse">
-              <Link href="/menu" className="hero-gradient text-on-primary px-10 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform duration-[400ms]">
+              <button className="hero-gradient text-on-primary px-10 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-105 transition-transform duration-[400ms]">
                 استكشف القائمة
-              </Link>
-              <Link href="/about" className="bg-surface-container-lowest text-on-surface px-10 py-4 rounded-xl text-lg font-bold border border-[var(--color-outline-variant)]/15 hover:bg-surface-container-low transition-colors">
+              </button>
+              <button className="bg-surface-container-lowest text-on-surface px-10 py-4 rounded-xl text-lg font-bold border border-[var(--color-outline-variant)]/15 hover:bg-surface-container-low transition-colors">
                 عن فاموس
-              </Link>
+              </button>
             </div>
           </div>
           <div className="relative flex justify-center">
@@ -96,9 +95,9 @@ export default function Home() {
               <p className="text-[#ffd3d1] text-xl mb-8 leading-relaxed">
                 احصل على 4 برجر كلاسيك، 2 بطاطس حجم عائلي، و4 مشروبات باردة فقط بـ 120 شيكل.
               </p>
-              <button className="bg-white text-red-900 px-12 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform duration-[400ms]">
+              <Link href="/menu" className="inline-flex bg-white text-red-900 px-12 py-4 rounded-xl font-black text-lg hover:scale-105 transition-transform duration-[400ms]">
                 اطلب العرض الآن
-              </button>
+              </Link>
             </div>
             <div className="relative z-10">
               <img
